@@ -4,9 +4,11 @@ import Map from "ol/Map";
 import styles from "@/styles/Home.module.css";
 import { useMap } from "@/hooks/useMap";
 
+const DISTANCE_TRAVELLED_IN_METERS = 2202870.07;
+
 export default function Home() {
   const mapRef = useRef<null | Map>(null);
-  useMap(mapRef, 1262047.6);
+  useMap(mapRef, DISTANCE_TRAVELLED_IN_METERS);
 
   return (
     <>
@@ -23,7 +25,7 @@ export default function Home() {
         <div className={styles.header}>
           <h1 className={styles.title}>Torchbox Treks 2023</h1>
           <p className={styles.stravaLink}>
-            <strong>784.2</strong> miles travelled.{" "}
+            <strong>1368.8</strong> miles travelled.{" "}
             <a href="https://www.strava.com/clubs/torchboxtreks">
               View team on Strava
             </a>
