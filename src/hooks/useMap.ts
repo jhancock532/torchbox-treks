@@ -88,7 +88,7 @@ export const useMap = (
         ],
         view: new View({
           center: bristolOffice,
-          zoom: 5,
+          zoom: 4,
         }),
       });
     }
